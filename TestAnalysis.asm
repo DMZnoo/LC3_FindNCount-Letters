@@ -2,12 +2,16 @@
 count1 .stringz "\nTotally, it has "
 count2 .stringz " characters including spaces\n"
 OUTPUTSTRING .stringz "\nThe text you have typed is: "
+MY_NAME .stringz "Jinwoo Lee, ID number:18018154\n\n"
 PRINT_INSTRUCTION .stringz "Please enter a text: "
 sentence_1 .stringz "It has "
 space_string .stringz " spaces\n"
 lower_string .stringz " lower-case letters\n"
 upper_string .stringz " upper-case letters\n"
 
+
+lea r0, MY_NAME
+    puts
     ; initialise registers
     and r2,r2,#0 
     AND r3, r3, #0
